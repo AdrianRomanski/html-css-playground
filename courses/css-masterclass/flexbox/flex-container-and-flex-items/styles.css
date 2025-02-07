@@ -1,0 +1,21 @@
+.flex-container {
+    /* CSS properties that apply to the flex container are:
+    flex-direction
+    flex-wrap
+    justify-content
+    align-items
+    align-content
+    gap
+    column-gap
+    row-gap   */
+}
+
+.flex-items {
+    /*CSS properties that apply to the flex items are:*/
+
+    /*    flex-grow*/
+    /*    flex-shrink*/
+    /*    flex-basis*/
+    /*    align-self*/
+    /*    order*/
+}
