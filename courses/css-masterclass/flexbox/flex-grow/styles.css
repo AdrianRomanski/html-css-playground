@@ -1,0 +1,31 @@
+.widths {
+/*
+    When using Flexbox, 2 widths are involved:
+    - the flex container's width: $container-width
+    - the sum of all the flex items width: $items-width
+
+    With those 2 widths, we can end up in 3 different scenarios:
+
+    $container-width is larger than $items-width
+    $container-width is equal to $items-width
+    $container-width is smaller than $items-width
+    This means we can end up with:
+
+    more space than needed: $remaining-space
+    just enough space for all items to fit
+    not enough space for all items: $shrinking-space
+
+
+   flex-grow: 1;
+   The value 1 is the growth factor of the flex item:
+   it's the share of $remaining-space that will be attributed to this flex item.
+
+   If we were to attribute the same growth factor to both flex items,
+   the remaining space would be equally distributed to both:
+
+   What would happen if both flex items had different growth factors?
+
+   In that case, each of them would receive a share relative to their growth factors:
+
+*/
+}
