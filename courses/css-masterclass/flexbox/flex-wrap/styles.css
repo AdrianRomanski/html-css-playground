@@ -1,0 +1,10 @@
+/*
+
+The flex-wrap property allows you to wrap flex items onto multiple lines.
+You can use one of the following values:
+
+nowrap the default behavior: flex items are forced onto a single line
+wrap flex items will flow downwards onto multiple lines, if needed
+wrap-reverse flex items will flow upwards onto multiple lines, if needed
+
+*/
