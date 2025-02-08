@@ -1,0 +1,45 @@
+/*// Sum of all item widths weighted by their shrink factor*/
+/*$shrinking-base = ($pink-item-width * $pink-flex-shrink)*/
+/*+ ($blue-item-width * $blue-flex-shrink);*/
+/*= (300px * 2) + (400px * 1)*/
+/*= 1000px;*/
+
+/*// Each item will be shrunk by a ratio based on their width and their shrink factor*/
+/*$pink-shrinking-ratio = $pink-item-width * $pink-flex-shrink / $shrinking-base;*/
+/*= 300px * 2 / 1000px;*/
+/*= 0.6;*/
+/*$blue-shrinking-ratio = $blue-item-width * $blue-flex-shrink / $shrinking-base;*/
+/*= 400px * 1 / 1000px;*/
+/*≅ 0.4;*/
+
+/*// We remove a weighted shrinking space from each item*/
+/*$pink-final-width = $pink-item-width - ($shrinking-space * $pink-shrinking-ratio)*/
+/*= 300px - (100px * 0.6)*/
+/*= 240px;*/
+/*$blue-final-width = $blue-item-width - ($shrinking-space * $blue-shrinking-ratio)*/
+/*= 400px - (100px * 0.4)*/
+/*≅ 360px;*/
+
+/*flex-shrink: 0
+When we want to prevent an element from shrinking at all, we can use flex-shrink: 0:*/
+
+/*Because they serve different purposes, it's possible to use flex-grow and flex-shrink together.
+
+That's because they are not enabled at the same time:
+
+flex-grow is only relevant if the $container-width is larger than the total $items-width
+flex-shrink is only relevant if the $container-width is smaller than the total $items-width*/
+
+
+/*When you set those values, just ask yourself:
+
+"If there is remaining space left, how do I want to distribute it amongst the flex items?"
+"If there is not enough space for all items to fit, where do I remove the required space from?"*/
+
+/*A common use case is when you combine a text input with a button:
+
+the text input should grow the most, and is allowed to shrink
+the button should never shrink, but can grow a tiny amount if possible*/
+
+/*By default, flex items are styled with flex-shrink: 1 and flex-grow: 0,
+ but it's always good practice to explicitly write them out, so you know what to expect*/
