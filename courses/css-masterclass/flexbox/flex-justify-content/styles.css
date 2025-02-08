@@ -1,0 +1,24 @@
+/*The priority order for flex calculations is:
+
+The justify-content property allows you to define how you want to distribute the space
+between and around flex items, along the main axis.
+
+For justify-content to have an impact vertically, we need to specify a height for the flex container:
+
+It's also possible to position a flex item by using an auto margin.
+
+margin-left: auto will push a flex item's previous sibling to the left
+margin-right: auto will push a flex item's following sibling to the right
+margin-inline-start: auto will push a flex item's previous sibling to the start of the flex container
+margin-inline-end: auto will push a flex item's previous sibling to the end of the flex container
+
+
+.target {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+While this technique is not Flexbox-specific, it becomes very useful when you want
+to push flex items to both sides like space-between, but with more than one flex item on a single side.
+
+*/
