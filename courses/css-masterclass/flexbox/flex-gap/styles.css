@@ -1,0 +1,13 @@
+/*
+
+The gap property can also accept 2 values:
+
+the first value will act as the row gap
+the second value will act as the column gap
+
+If you only want to specify either a vertical gap or a horizontal one,
+use the row-gap and column-gap properties respectively.
+
+The main benefit of gap is that it only inserts between the flex items, and not around them.
+
+*/
