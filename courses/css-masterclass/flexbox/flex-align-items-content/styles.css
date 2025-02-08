@@ -1,0 +1,34 @@
+/*
+
+The align-items
+property allows you to define how you want to distribute the space between
+and around flex items, along the cross axis.
+
+You can choose one of the following keywords:
+
+start the flex items will be packed towards the start of the cross axis (usually at the top)
+end the flex items will be pushed to the end of the cross axis
+center the flex items will be positioned towards the center of the cross axis
+baseline the flex items baseline (which is the position of the bottom of each letter) will be positioned towards the center of the cross axis
+stretch the flex items will increase their size to fill the whole length of the cross axis (usually the height)
+
+stretch on flex-direction column may be extremely use full
+
+The align-self
+If you want to align one flex item differently than the others, you can use align-self.
+It accepts the same values as align-items.
+The difference is that it applies to a single flex item, rather than the parent flex container.
+
+The align-content
+property allows you to define how you want to distribute the space
+between and around the lines of a flex container.
+
+The values for align-content are similar to the ones used for justify-content,
+but instead of spacing out flex items horizontally, it's spacing out lines vertically.
+
+To summarize:
+
+align-items determines how flex items are positioned on their line
+align-content determines how flex lines are positioned within the flex container
+
+*/
