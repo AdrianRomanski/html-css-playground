@@ -1,0 +1,24 @@
+/*The priority order for flex calculations is:
+
+flex-basis (if it's set)
+width (if it's set)
+the content's intrinsic width
+
+min-width and max-width
+If min-width and/or max-width are applied, their values supersede the flex grow/shrink calculations.
+
+Because of their different nature:
+
+min-width will prevent a flex item from shrinking below a certain value
+max-width will prevent a flex item from growing beyond a certain value
+
+The flex-basis also accepts 3 keywords:
+
+min-content: the flex item will be as narrow as possible (usually the width of the longest word in a sentence), provided that flex-grow: 0
+max-content: the flex item will use just enough space for its content to not overflow, but will use the whole width if its content needs to wrap
+fit-content: the browser will automatically choose between the min-content value, the max-content value, or the flex container itself
+In practice, setting max-content or fit-content as the flex-basis value, or even keeping the default auto value, will all render the same result. This means you're rarely gonna use them.
+
+min-content on the other hand, can be quite useful:
+ it allows you to shrink a flex item as much as possible, but without overflowing its content.
+*/
