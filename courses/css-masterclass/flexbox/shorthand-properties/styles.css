@@ -1,0 +1,18 @@
+/*
+    gap is a shorthand for row-gap and column-gap
+    flex-flow is a shorthand for flex-direction and flex-wrap
+    flex is a shorthand for flex-grow flex-shrink and flex-basis
+
+    flex: 1.
+    setting flex-grow and flex-shrink to 1
+    setting flex-basis to 0%
+
+    If you had written flex-basis: 240px and then apply flex: 1, you will set flex-basis to 0%.
+
+    If you only specify 2 values, it's the unit types that will determine which of the 3 properties will actually inherit those values.
+
+    flex: 2 3: since only unitless values are defined,
+                flex-grow and flex-shrink will inherit them, and flex-basis will default to 0%
+    flex: 2 3%: since only 1 unitless value and 1 length value are defined,
+                flex-grow and flex-basis will inherit them respectively, and flex-shrink will default to 1
+*/
