@@ -1,0 +1,38 @@
+<!--The <abbr> HTML element represents an abbreviation or acronym.-->
+
+<!--When including an abbreviation or acronym, provide a full expansion of the term in plain text on first use,
+ along with the <abbr> to mark up the abbreviation. This informs the user what the abbreviation or acronym means.-->
+
+<!--  The optional title attribute can provide an expansion for the abbreviation or acronym when
+a full expansion is not present. This provides a hint to user agents on how to announce/display the content
+while informing all users what the abbreviation means. If present, title must contain this full description and nothing else.-->
+
+
+<!--Examples-->
+
+<!--Marking up an abbreviation semantically
+To mark up an abbreviation without providing an expansion or description, use <abbr> without any attributes,
+ as seen in this example.-->
+
+<p>Using <abbr>HTML</abbr> is fun and easy!</p>
+
+
+<!--Providing an expansion
+Adding a title attribute lets you provide an expansion or definition for the abbreviation or acronym.-->
+
+<p>Ashok's joke made me <abbr title="Laugh Out Loud">LOL</abbr> big time.</p>
+
+<!--<p>Ashok's joke made me <abbr title="Laugh Out Loud">LOL</abbr> big time.</p>-->
+
+<!--Defining an abbreviation
+You can use <abbr> in tandem with <dfn> to more formally define an abbreviation, as shown here.-->
+<p>
+    <dfn id="html"><abbr title="HyperText Markup Language">HTML</abbr> </dfn> is a
+    markup language used to create the semantics and structure of a web page.
+</p>
+
+<p>
+    A <dfn id="spec">Specification</dfn> (<abbr>spec</abbr>) is a document that
+    outlines in detail how a technology or API is intended to function and how it
+    is accessed.
+</p>
